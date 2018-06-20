@@ -372,3 +372,15 @@ a:hover{
 i.red{
     color:#BC0213;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(37, 49, 65, 1) !important;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
