@@ -103,6 +103,11 @@ p {
   }
 }
 
+#navbarResponsive{
+  height: 55px;
+}
+
+
 .btn-xl {
   font-weight: 700;
   font-size: 0.8rem;
