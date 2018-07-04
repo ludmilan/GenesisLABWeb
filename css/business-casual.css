@@ -46,6 +46,7 @@ p {
   font-size: 5rem;
   font-weight: 100;
   line-height: 4rem;
+  max-width: 300px;
 }
 
 .page-section {
@@ -256,113 +257,6 @@ p {
 
 /* styles for people section */
 
-/* styles for people section */
-
-.team{
-    padding:75px 0;
-}
-h6.description{
-	font-weight: bold;
-	letter-spacing: 2px;
-	color: #999;
-	border-bottom: 1px solid rgba(0, 0, 0,0.1);
-	padding-bottom: 5px;
-}
-.profile{
-	margin-top: 25px;
-}
-.profile h1{
-	font-weight: normal;
-	font-size: 20px;
-	margin:10px 0 0 0;
-  color: #fff9;
-}
-.profile h2{
-	font-size: 14px;
-	font-weight: lighter;
-	margin-top: 5px;
-  color: #fff9;
-}
-
-.profile p{
-  color: #fff9;
-}
-
-.profile .img-box{
-	opacity: 1;
-	display: block;
-	position: relative;
-  max-width : 200px;
-}
-.profile .img-box:after{
-	content:"";
-	opacity: 0;
-	background-color: rgba(0, 0, 0, 0.75);
-	position: absolute;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-}
-
-.img-responsive{
-  width: 200px;
-  vertical-align: middle;
-}
-
-.img-box ul{
-	position: absolute;
-	z-index: 2;
-	bottom: 50px;
-	text-align: center;
-	width: 100%;
-	padding-left: 0px;
-	height: 0px;
-	margin:0px;
-	opacity: 0;
-}
-.profile .img-box:after, .img-box ul, .img-box ul li{
-	-webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-.img-box ul i{
-	font-size: 20px;
-	letter-spacing: 10px;
-}
-.img-box ul li{
-	width: 30px;
-    height: 30px;
-    text-align: center;
-    border: 1px solid #88C425;
-    margin: 2px;
-    padding: 5px;
-	display: inline-block;
-}
-.img-box a{
-	color:#fff;
-}
-.img-box:hover:after{
-	opacity: 1;
-}
-.img-box:hover ul{
-	opacity: 1;
-}
-.img-box ul a{
-	-webkit-transition: all 0.3s ease-in-out 0s;
-	-moz-transition: all 0.3s ease-in-out 0s;
-	transition: all 0.3s ease-in-out 0s;
-}
-.img-box a:hover li{
-	border-color: #fff;
-	color: #88C425;
-}
-
-.img-facebook{
-  max-width: 30px;
-  text-align: center;
-  display: inline-block;
-}
 
 a{
     color:#88C425;
@@ -622,7 +516,7 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
+  background-color: #e7a756;
   border-color: #33C3F0; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -903,3 +797,173 @@ there.
     max-width: 500px;
     max-height: 500px;
   }
+
+
+
+  :root {
+    --jumbotron-padding-y: 3rem;
+  }
+
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+
+.jumbotron-1{
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.jumbotron-2{
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer p {
+    margin-bottom: .25rem;
+  }
+
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+/*  Home Page Services - Java Devolopment - Android Devolopment  */
+
+  .font-icons {
+    margin-top: 20px;
+    color: #495057;
+  }
+
+
+.card-body h6{
+  margin-bottom: 0;
+}
+
+.card-body {
+  padding-top: 10px;
+}
+
+
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #263241 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+
+.quick-links-size{
+  max-width: 25%;
+}
+
+.heading-what-we-do{
+  text-align: center;
+}
+
+.album{
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.company-logo{
+  max-width: 400px;
+}
