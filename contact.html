@@ -13,6 +13,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -21,7 +22,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="css/people.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
   </head>
 
@@ -48,10 +49,10 @@
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="services.html">Services</a>
             </li>
-            <li class="nav-item active px-lg-4">
+            <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="team.html">Team</a>
             </li>
-            <li class="nav-item px-lg-4">
+            <li class="nav-item px-lg-4 active">
               <a class="nav-link text-uppercase text-expanded" href="contact.html">Contact us</a>
             </li>
           </ul>
@@ -60,72 +61,29 @@
     </nav>
 
 
-  <section class="team page-section cta">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-md-offset-1">
-        <div class="col-lg-12">
-          <h6 class="description">OUR TEAM</h6>
-          <div class="row pt-md">
-
-            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 profile">
-              <div class="img-box">
-                <img src="img/people/sandun.jpeg" class="img-responsive">
-                <ul class="text-center">
-                  <a href="#"><img src="img/facebook.png" class="img-facebook"></li></a>
-                </ul>
-              </div>
-              <h1>S Chathuranga</h1>
-              <h2>Founder</h2>
-              <p>Chief executive officer, the highest-ranking person in a company or other institution,
-                ultimately responsible for taking managerial decisions.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 profile">
-              <div class="img-box">
-                <img src="img/people/milinda.jpeg" class="img-responsive">
-                <ul class="text-center">
-                  <a href="#"><img src="img/facebook.png" class="img-facebook"></li></a>
-                </ul>
-              </div>
-              <h1>Milinda</h1>
-              <h2>Co-Founder</h2>
-              <p>Solve whatever problem our company faces in relation to our technology,
-                the public and our internal culture. Evangelists have to be very good programmers to be successful.</p>
-            </div>
-
-            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 profile">
-              <div class="img-box">
-                <img src="img/people/darshana.jpeg" class="img-responsive">
-                <ul class="text-center">
-                  <a href="#"><img src="img/facebook.png" class="img-facebook"></li></a>
-                </ul>
-              </div>
-              <h1>Heather H</h1>
-              <h2>Software Engineer</h2>
-              <p>Your job as a business development manager is to identify sales leads,
-                pitch goods or services to new clients and maintain a good working relationship with new contacts.</p>
-            </div>
-
-
-            <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12 profile">
-              <div class="img-box">
-                <img src="img/people/lasitha.jpg" class="img-responsive">
-                <ul class="text-center">
-                  <a href="#"><img src="img/facebook.png" class="img-facebook"></li></a>
-                </ul>
-              </div>
-              <h1>Lasitha Ludmilan</h1>
-              <h2>Automation Engineer</h2>
-              <p>One of several people involved with the creation of a business,
-                organization, union, or entity. The two cofounders both attended the ceremony.</p>
-            </div>
-
-    </div>
+<section class="team page-section cta">
+<div class="container">
+  <div class="form-container">
+      <h1>
+          Contact Us
+      </h1>
+      <form method="post" id="reused_form" >
+          <label for="name">Your Name:</label>
+          <input id="name" type="text" name="Name" required maxlength="50">
+          <label for="email">Email Address:</label>
+          <input id="email" type="email" name="Email" required maxlength="50">
+          <label for="message">Message:</label>
+          <textarea id="message" name="Message" rows="10" maxlength="6000" required></textarea>
+          <button class="button-primary" type="submit" >Send Message</button>
+      </form>
+      <div id="success_message" style="display:none">
+          <h3>Submitted the form successfully!</h3>
+          <p> We will get back to you soon. </p>
+      </div>
+      <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
   </div>
+</div>
 </section>
-
-
 
 <!-- Footer -->
   <section id="footer">
@@ -185,12 +143,11 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 
-
-  <!-- Script to highlight the active date in the hours list
+  <!-- Script to highlight the active date in the hours list -->
   <script>
 
     $('.list-hours li').eq(new Date().getDay()).addClass('today');
@@ -208,5 +165,6 @@
       }
     }
 
-  </script> -->
+  </script>
+
 </html>
