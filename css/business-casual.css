@@ -967,3 +967,13 @@ section .section-title {
 .company-logo{
   max-width: 400px;
 }
+
+.jumbotron{
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.album{
+  margin-left: 75px;
+  margin-right: 75px;
+}
